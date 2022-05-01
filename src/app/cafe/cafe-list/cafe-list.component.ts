@@ -20,8 +20,36 @@ export class CafeListComponent implements OnInit {
     });
   }
 
+  darCafeBlend():number{
+    let totaCafesBlend:number = 0;
+    for (let index=0; index < this.cafes.length; index++)
+    {
+        let blend:Cafe =this.cafes[index];
+            if (blend.tipo == "Blend")
+            {
+              totaCafesBlend+=1;
+            }
+    }
+    return totaCafesBlend;
+  }
+
+  darCafeOrigen():number{
+    let totaCafesOrigen:number = 0;
+    for (let index=0; index < this.cafes.length; index++)
+    {
+        let origen:Cafe =this.cafes[index];
+            if (origen.tipo == "Café de Origen")
+            {
+              totaCafesOrigen+=1;
+            }
+    }
+    return totaCafesOrigen;
+  }
+
   ngOnInit() {
     this.getCafes();
+    this.darCafeBlend();
+    this.darCafeOrigen();
   }
 
 }
