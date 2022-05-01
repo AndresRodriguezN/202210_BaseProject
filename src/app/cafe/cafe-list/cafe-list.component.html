@@ -1,3 +1,17 @@
-<p>
-  cafe-list works!
-</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col mb-2" *ngFor="let cafe of cafes">
+          <div class="card p-2" style="width: 15rem; height: 33rem">
+              <img
+                class="card-img-top"
+                src="{{ cafe.imagen }}"
+                alt="{{ cafe.nombre }}"
+              />
+              <div class="card-body">
+                <h5 class="card-title">{{ cafe.nombre }}</h5>
+                  <p class="card-text">[{{ cafe.nombre }}]</p>
+              </div>
+           </div>
+      </div>
+   </div>
+</div>
