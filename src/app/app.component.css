@@ -1,3 +1,9 @@
-* [lang^=en] {
-  color: green;
+.h2{
+  font-size:x-large;
+  text-align: left;
+  font-family: 'Indie Flower';font-size: 26px;
+}
+.d-block{
+  text-align: center;
+  font-family: inter;
 }

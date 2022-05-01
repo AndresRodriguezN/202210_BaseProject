@@ -1,5 +1,11 @@
-img {
-  height: 350px;
+
+.thumb {
+  padding: 20px;
+  border-color:lightgray white lightgray white;
+  border-style:solid;
+}
+
+.row{
   width: auto;
-  max-width: 400px;
- }
+  max-width: 600px
+}
